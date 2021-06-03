@@ -1,0 +1,10 @@
+Contact user Database-----------------------
+Name : 
+Name : 
+The Message :  
+The rate is 1
+-----------------------
+Name : 
+Name : 
+The Message :  
+The rate is 5
