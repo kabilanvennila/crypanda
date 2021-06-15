@@ -11,7 +11,7 @@ sl.image('cryp.jpeg',use_column_width=True)
 Stocklist=['ADA(Cardano)','Dogecoin','Litecoin','Etherum','Bitcoin']
 
 if(sl.checkbox("Select Crypto")):
-    stockChosen=sl.multiselect('Select a stock',Stocklist)
+    stockChosen=sl.multiselect('Select a Crypto',Stocklist)
     if (stockChosen==[]):
         sl.error("Warning : Please choose a Crypto")    
     

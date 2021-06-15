@@ -1,6 +1,10 @@
-# stockapp
+# CryptoPanda
+An Interactive Machine learning Webapp that predicts the price of cryptos and let the users play with it 
+![](mockups/s1.png)
+![](mockups/s2.png)
+![](mockups/s3.png)
 
-## [Demo app]https://share.streamlit.io/kabilanvennila/stockapp/main
+## [Demo app]https://share.streamlit.io/kabilanvennila/crypanda/main
 
 If you want to run this locally 
 
