@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as sl
 
+
 sl.set_page_config(page_title='Crypto Panda',page_icon=":panda_face")
 sl.title("Crypto Panda 🐼")
 sl.header("Hi 👋 i am Crypto Panda, I will teach you about Cryptos in a useful and fun way")
@@ -56,7 +57,7 @@ if(sl.checkbox("Select Crypto")):
         sl.markdown(' With the **Slider** given below choose which day from today you want to predict ')
         sl.slider('Day',min_value=1,max_value=30)
         predicted=model.predict([[Day+PreVal]])
-        sl.write("The Predicted opening price and closing price of Stocks are ",predicted)
+        sl.write("The Predicted opening price and closing price of Cryptos are ",predicted)
     
     elif(stockChosen[0]==Stocklist[1]):
         sl.title("🐕 Dogecoin")
@@ -98,7 +99,7 @@ if(sl.checkbox("Select Crypto")):
         sl.markdown(' With the **Slider** given below choose which day from today you want to predict ')
         sl.slider('Day',min_value=1,max_value=30)
         predicted=model.predict([[Day+PreVal]])
-        sl.write("The Predicted opening price and closing price of Stocks are ",predicted)
+        sl.write("The Predicted opening price and closing price of Cryptos are ",predicted)
 
     
     elif(stockChosen[0]==Stocklist[4]):
@@ -140,7 +141,7 @@ if(sl.checkbox("Select Crypto")):
         sl.markdown(' With the **Slider** given below choose which day from today you want to predict ')
         sl.slider('Day',min_value=1,max_value=30)
         predicted=model.predict([[Day+PreVal]])
-        sl.write("The Predicted opening price and closing price of Stocks are ",predicted)
+        sl.write("The Predicted opening price and closing price of Cryptos are ",predicted)
 
     elif(stockChosen[0]==Stocklist[3]):
         sl.title("⧫ Ethereum")
@@ -181,7 +182,7 @@ if(sl.checkbox("Select Crypto")):
         sl.markdown(' With the **Slider** given below choose which day from today you want to predict ')
         sl.slider('Day',min_value=1,max_value=30)
         predicted=model.predict([[Day+PreVal]])
-        sl.write("The Predicted opening price and closing price of Stocks are ",predicted)
+        sl.write("The Predicted opening price and closing price of Cryptos are ",predicted)
     
     elif(stockChosen[0]==Stocklist[2]):
         sl.title("I❣ Litecoin")
@@ -223,29 +224,14 @@ if(sl.checkbox("Select Crypto")):
         sl.markdown(' With the **Slider** given below choose which day from today you want to predict ')
         sl.slider('Day',min_value=1,max_value=30)
         predicted=model.predict([[Day+PreVal]])
-        sl.write("The Predicted opening price and closing price of Stocks are ",predicted)
-
-
-
+        sl.write("The Predicted opening price and closing price of Cryptos are ",predicted)
 
 
 
 if(sl.button("About this app")):
-    sl.info("This webapp is still under construction and works with limited number of data and some basic machine learning model behind it ")
+    sl.info("This webapp is still under construction and works with a machine learning model behind it ")
 if(sl.button("Version")):
     sl.info("Version:0.3")  
-myRate=sl.sidebar.slider("Rate",max_value=5,min_value=1)
-if(sl.checkbox("Contact User(Currently unavailable)")):
-    t1=sl.text_input("Name")
-    t2=sl.text_input("Email-Id")
-    t3=sl.text_area("Enter your Message here ")
-    if(t3 != ''):
-        sl.write("Thank you %s ,We will contact you soon"%t1)
-    f=open('message.txt','a+')
-    f.write("-----------------------\n")
-    f.write("Name : %s\n"%t1)
-    f.write("Name : %s\n"%t2)
-    f.writelines("The Message :  %s\n" %t3)
-    f.write("The rate is %s\n"%myRate)
-    f.close()
+myRate=sl.sidebar.slider("Stars 🌟 for me 🥺",max_value=5,min_value=1)
+
     
